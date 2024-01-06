@@ -6,5 +6,24 @@ git git push origin {branch Name} # the extact branch where you want to push you
 
 
 
-Note: you can create new branch using 
-git commit -b {branch name} # this particular for you.
+to create new branch
+git brnach {any branch name}
+
+for example: git branch tester
+
+to switch new created branch
+git checkout {brnach Name}
+
+for example : git checkout tester
+
+to verify you are on your branch only check with
+git branch # here all the list of branch will be displayed.
+
+Note IMp: 
+everytime before pusing adding please check the status of the branch
+git status # here will show the modified file or folder.
+
+
+
+
+
