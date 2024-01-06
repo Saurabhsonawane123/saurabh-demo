@@ -1,1 +1,10 @@
 this for demo purpose for git command.
+git command
+git add . # to add all file 
+git commit -m "what you did changes in repo"
+git git push origin {branch Name} # the extact branch where you want to push your code
+
+
+
+Note: you can create new branch using 
+git commit -b {branch name} # this particular for you.
