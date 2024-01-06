@@ -41,4 +41,17 @@ AS
 DECLARE @gender_TAKE char(1)
 EXECUTE   spGET_GENDERtype '01' , @gender_TAKE OUTPUT
 PRINT @gender_TAKE
----------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------
+CREATE PROCEDURE spGET_PGNUMtype
+@id varchar(15),
+@gender char(1) output
+
+AS
+	BEGIN 
+		SELECT  @gender = [Gender] FROM [dbo].[Person] WHERE [Person_id] = @id
+	END
+
+DECLARE @gender_TAKE char(1)
+EXECUTE   spGET_GENDERtype '01' , @gender_TAKE OUTPUT
+PRINT @gender_TAKE
